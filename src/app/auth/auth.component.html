@@ -1,0 +1,39 @@
+<div class="row m-0">
+    <div class="col col-6">
+        <div class="main-content">
+            <h3>Logistics Beyond expectation</h3>
+            <div class="card login-card" *ngIf="!viewRegister">
+                <div class="card-body">
+                    <input placeholder="email" type="email">
+                    <input placeholder="password" type="password">
+                    <select>
+                        <option disabled>You Are</option>
+                        <option value="1">Agent</option>
+                        <option value="2">Customer</option>
+                    </select>
+                    <button class="btn">Login</button>
+                    <p>Don't have account ? <a (click)="toggleLoginCard()">Register.</a></p>
+                </div>
+            </div>
+            <div class="card login-card" *ngIf="viewRegister">
+                <div class="card-body">
+                    <input placeholder="Full Name" type="text">
+                    <input placeholder="Mobile Number" type="tel">
+                    <input placeholder="Email" type="email">
+                    <input placeholder="New Password" type="password">
+                    <select>
+                        <option disabled>You Are</option>
+                        <option value="1">Agent</option>
+                        <option value="2">Customer</option>
+                    </select>
+                    <button class="btn">Register</button>
+                    <p>Already have account? <a (click)="toggleLoginCard()">Login.</a></p>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+    <div class=" col col-6">
+        <img class="main-img" src="assets/img/background.jpg" alt="">
+    </div>
+  </div>
