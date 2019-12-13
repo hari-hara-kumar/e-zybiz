@@ -7,6 +7,10 @@ import { AssetComponent } from './pages/asset/asset.component';
 import { QueryFormComponent } from './pages/query-form/query-form.component';
 import { QuotationFormComponent } from './pages/quotation-form/quotation-form.component';
 import { SalesQuoteComponent } from './pages/sales-quote/sales-quote.component';
+import { NetworkDetailComponent } from './pages/network-detail/network-detail.component';
+import { QueryFormDetailComponent } from './pages/query-form-detail/query-form-detail.component';
+import { QuotationFormDetailComponent } from './pages/quotation-form-detail/quotation-form-detail.component';
+import { SalesQuoteDetailComponent } from './pages/sales-quote-detail/sales-quote-detail.component';
 
 const routes: Routes = [
   {
@@ -21,12 +25,14 @@ const routes: Routes = [
 
     ]
   },
+  { path: 'add-network', component: NetworkDetailComponent }
+
 
 ]
 
 
 @NgModule({
-  declarations: [DashboardComponent, NetworkComponent, AssetComponent, QueryFormComponent, QuotationFormComponent, SalesQuoteComponent],
+  declarations: [DashboardComponent, NetworkComponent, AssetComponent, QueryFormComponent, QuotationFormComponent, SalesQuoteComponent, NetworkDetailComponent, QueryFormDetailComponent, QuotationFormDetailComponent, SalesQuoteDetailComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)

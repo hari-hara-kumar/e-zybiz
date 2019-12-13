@@ -1,0 +1,52 @@
+.detail-head {
+  margin-top: 5px;
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+  align-items: baseline;
+  justify-content: space-between;
+
+
+  h1 {
+    color: #008dd6;
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  .action {
+    button {
+      color: #fff;
+      border: none;
+      padding: 5px 15px;
+      border-radius: 5px;
+    }
+
+    .edit {
+      background: #008dd6;
+    }
+
+    .delete {
+      background: crimson;
+      margin-left: 20px;
+    }
+  }
+}
+
+.detail-body {
+  padding: 2rem;
+
+  p {
+    margin: 3px 0;
+    font-size: 14px;
+    padding-left: 9px;
+  }
+
+  input,
+  textarea {
+    border: 1px solid #e4e1e1;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+}

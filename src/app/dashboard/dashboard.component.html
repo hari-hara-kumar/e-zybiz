@@ -1,14 +1,21 @@
-
 <div class="row m-0">
     <div class="col-2 p-0">
         <div class="side-menu">
             <p>Home</p>
             <ul>
-                <li [routerLinkActive]="'selected'" (click)="openPage('dashboard/network')">Network</li>
-                <li (click)="openPage('dashboard/asset')">Asset</li>
-                <li (click)="openPage('dashboard/query-form')">Query Form</li>
-                <li (click)="openPage('dashboard/quotation-form')">Quotation Form</li>
-                <li (click)="openPage('dashboard/sales-quote')">Sales Quote</li>
+                <li>
+                    <a [routerLink]="['/dashboard/network']" routerLinkActive="selected" href="JavaScript:void(0)">
+                        Network
+                    </a>
+                </li>
+                <li><a [routerLink]="['/dashboard/asset']" routerLinkActive="selected"
+                        href="JavaScript:void(0)">Asset</a></li>
+                <li><a [routerLink]="['/dashboard/query-form']" routerLinkActive="selected"
+                        href="JavaScript:void(0)">Query Form</a></li>
+                <li><a [routerLink]="['/dashboard/quotation-form']" routerLinkActive="selected"
+                        href="JavaScript:void(0)">Quotation Form</a></li>
+                <li><a [routerLink]="['/dashboard/sales-quote']" routerLinkActive="selected"
+                        href="JavaScript:void(0)">Sales Quote</a></li>
             </ul>
         </div>
 
