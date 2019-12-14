@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./network-detail.component.scss']
 })
 export class NetworkDetailComponent implements OnInit {
-is
+  isEdit = false;
   constructor() { }
 
   ngOnInit() {
+  }
+  toggleEdit() {
+    this.isEdit = !this.isEdit;
   }
 
 }
